@@ -9,6 +9,7 @@
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
+    id 'application'
 }
 
 repositories {
@@ -25,5 +26,9 @@ dependencies {
     implementation 'com.google.guava:guava:28.0-jre'
 
     // Use JUnit test framework
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:5'
+}
+
+application {
+	mainClassName = 'com.pluralflights.Airport'
 }
