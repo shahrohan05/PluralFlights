@@ -9,7 +9,7 @@ Online Course : https://app.pluralsight.com/course-player?clipId=517bfc0b-04e1-4
 -------------------------------------------------
 
 ## FibonacciTest 
-[scr/main/java/com/pluralflights](https://github.com/shahrohan05/PluralFlights/blob/master/src/main/java/com/pluralflights/tests/FibonacciTest.java)
+[scr/main/java/com/pluralflights/tests/FibonacciTest.java](https://github.com/shahrohan05/PluralFlights/blob/master/src/main/java/com/pluralflights/tests/FibonacciTest.java)
 
 Sample code for fibonacci series implementation using recursive function and java 8 streams API.
 
