@@ -27,6 +27,9 @@ public class Flight {
 		return flightType;
 	}
 
+	/*
+	 * Only VIP passengers can be added to business class.
+	 * */
 	public boolean addPassenger(Passenger passenger) {
 		switch (flightType) {
 			case "Economy":
@@ -42,10 +45,13 @@ public class Flight {
 
 	}
 
+	/*
+	 * A VIP passenger cannot be removed from a flight 
+	 * */
 	public boolean removePassenger(Passenger passenger) {
 		switch (flightType) {
 			case "Economy":
-				if (passenger.isVip()) {
+				if (!passenger.isVip()) {
 					return passengersList.remove(passenger);
 				}
 				return false;
