@@ -23,12 +23,16 @@ public abstract class Flight {
 
 	/*
 	 * Only VIP passengers can be added to business class.
+	 * 
+	 * New Feature : Allow VIP in premium flight
 	 * */
 	public abstract boolean addPassenger(Passenger passenger);
 
 	
 	/*
-	 * A VIP passenger cannot be removed from a flight 
+	 * A VIP passenger cannot be removed from a flight
+	 * 
+	 *  New Feature : VIP can be removed from premium flight
 	 * */
 	public abstract boolean removePassenger(Passenger passenger);
 
