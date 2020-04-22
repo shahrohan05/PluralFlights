@@ -4,7 +4,9 @@ Sample flights and passenger management java application program written to lear
 Online Course : https://app.pluralsight.com/course-player?clipId=517bfc0b-04e1-4448-b357-d35e4d3aff60
 
 Project Configuration:
-Gradle - with JUnit 5 Configuration and JaCoCo Plugin for test coverage. See [build.gradle](https://github.com/shahrohan05/PluralFlights/blob/master/build.gradle)
+Gradle with JUnit 5 Configuration and JaCoCo Plugin for test coverage. See [build.gradle](https://github.com/shahrohan05/PluralFlights/blob/master/build.gradle)
+
+Gradle JaCoCo config help - https://docs.gradle.org/current/userguide/jacoco_plugin.html
 
 
 
