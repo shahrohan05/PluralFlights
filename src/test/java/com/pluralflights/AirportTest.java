@@ -12,6 +12,12 @@ import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.RepetitionInfo;
 import org.junit.jupiter.api.Test;
 
+import com.pluralflights.flight.BusinessFlight;
+import com.pluralflights.flight.EconomyFlight;
+import com.pluralflights.flight.Flight;
+import com.pluralflights.flight.PremiumFlight;
+import com.pluralflights.passenger.Passenger;
+
 public class AirportTest {
 
 	@DisplayName("Given there is an economy flight")
@@ -57,7 +63,7 @@ public class AirportTest {
 				}
 				
 				assertAll("Verify that a usual passenger can be added to an economy flight only once",
-						() -> assertEquals(1, economyFlight.passengersSet.size()),
+						() -> assertEquals(1, economyFlight.getPassengersSet().size()),
 						() -> assertTrue(economyFlight.getPassengersSet().contains(mike)),
 						() -> assertTrue(economyFlight.getPassengersSet().iterator().next().getName().equalsIgnoreCase("mike")));
 			}
@@ -145,7 +151,7 @@ public class AirportTest {
 				}
 				
 				assertAll("Verify that a VIP passenger can be added to a business flight only once",
-						() -> assertEquals(1, businessFlight.passengersSet.size()),
+						() -> assertEquals(1, businessFlight.getPassengersSet().size()),
 						() -> assertTrue(businessFlight.getPassengersSet().contains(john)),
 						() -> assertTrue(businessFlight.getPassengersSet().iterator().next().getName().equalsIgnoreCase("john")));
 			}
@@ -213,7 +219,7 @@ public class AirportTest {
 				}
 				
 				assertAll("Verify that a VIP passenger can be added to a premium flight only once",
-						() -> assertEquals(1, premiumFlight.passengersSet.size()),
+						() -> assertEquals(1, premiumFlight.getPassengersSet().size()),
 						() -> assertTrue(premiumFlight.getPassengersSet().contains(john)),
 						() -> assertTrue(premiumFlight.getPassengersSet().iterator().next().getName().equalsIgnoreCase("john")));
 			}

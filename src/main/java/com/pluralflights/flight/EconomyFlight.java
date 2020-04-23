@@ -1,4 +1,6 @@
-package com.pluralflights;
+package com.pluralflights.flight;
+
+import com.pluralflights.passenger.Passenger;
 
 public class EconomyFlight extends Flight {
 	

@@ -1,14 +1,16 @@
-package com.pluralflights;
+package com.pluralflights.flight;
 
-public class PremiumFlight extends Flight {
+import com.pluralflights.passenger.Passenger;
+
+public class BusinessFlight extends Flight {
 	
-	public PremiumFlight(String id) {
+	public BusinessFlight(String id) {
 		super(id);
 	}
 
 	@Override
 	public boolean addPassenger(Passenger passenger) {
-		if(passenger.isVip()) {
+		if (passenger.isVip()) {
 			return passengersSet.add(passenger);
 		}
 		return false;
@@ -16,9 +18,6 @@ public class PremiumFlight extends Flight {
 
 	@Override
 	public boolean removePassenger(Passenger passenger) {
-		if(passenger.isVip()) {
-			return passengersSet.remove(passenger);
-		}
 		return false;
 	}
 
