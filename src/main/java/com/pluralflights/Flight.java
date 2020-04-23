@@ -1,13 +1,13 @@
 package com.pluralflights;
 
-import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public abstract class Flight {
 
 	private String id;
-	protected List<Passenger> passengersList = new ArrayList<Passenger>();
+	protected Set<Passenger> passengersSet = new HashSet<Passenger>();
 
 	public Flight(String id) {
 		this.id = id;
@@ -17,8 +17,8 @@ public abstract class Flight {
 		return id;
 	}
 
-	public List<Passenger> getPassengersList() {
-		return Collections.unmodifiableList(passengersList);
+	public Set<Passenger> getPassengersSet() {
+		return Collections.unmodifiableSet(passengersSet);
 	}	
 
 	/*
