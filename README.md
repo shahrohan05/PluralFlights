@@ -3,7 +3,7 @@ Sample flights and passenger management java application program written to lear
 
 Online Course : https://app.pluralsight.com/course-player?clipId=517bfc0b-04e1-4448-b357-d35e4d3aff60
 
-Project :
+Project :<br> 
 JUnit 5 for unit tests <br>
 JaCoCo Plugin for test coverage <br>
 Mockito framework for providing mock objects <br>
